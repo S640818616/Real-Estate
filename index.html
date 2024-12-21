@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate Listings</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        header {
+            background-color: #004085;
+            color: white;
+            padding: 1em;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        h1 {
+            margin: 0;
+        }
+        main {
+            padding: 2em;
+        }
+        #listings {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1em;
+        }
+        .property {
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            background-color: white;
+            padding: 1em;
+            width: calc(33.333% - 1em);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .property img {
+            width: 100%;
+            border-bottom: 2px solid #ddd;
+            margin-bottom: 1em;
+        }
+        .property h3 {
+            margin-top: 0;
+        }
+        #about, #contact {
+            background-color: white;
+            padding: 2em;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2em;
+        }
+        form label {
+            display: block;
+            margin: 0.5em 0 0.2em;
+        }
+        form input, form textarea {
+            width: 100%;
+            padding: 0.5em;
+            margin-bottom: 1em;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        form button {
+            background-color: #004085;
+            color: white;
+            border: none;
+            padding: 0.5em 1em;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        footer {
+            text-align: center;
+            padding: 1em;
+            background-color: #004085;
+            color: white;
+        }
+        footer a {
+            color: #ffd700;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#listings">Listings</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <h1>Welcome to Dream Properties</h1>
+        <p>Your one-stop solution for finding your dream home!</p>
+    </header>
+
+    <main>
+        <section id="listings">
+            <h2>Featured Listings</h2>
+            <div class="property">
+                <img src="images/house1.jpg" alt="House 1">
+                <h3>Modern Family Home</h3>
+                <p>Location: Springfield</p>
+                <p>Price: $450,000</p>
+                <p>Bedrooms: 4 | Bathrooms: 3 | Size: 2,500 sqft</p>
+                <a href="https://www.homify.in/ideabooks/2900810/a-modern-home-with-stylish-details-for-the-indian-family">View Details</a>
+            </div>
+            <div class="property">
+                <img src="images/house2.jpg" alt="House 2">
+                <h3>Luxury Villa</h3>
+                <p>Location: Beverly Hills</p>
+                <p>Price: $2,300,000</p>
+                <p>Bedrooms: 6 | Bathrooms: 5 | Size: 5,000 sqft</p>
+                <a href="#">View Details</a>
+                <a href="#"> details</a>
+            </div>
+            <div class="property">
+                <img src="images/house3.jpg" alt="House 3">
+                <h3>Cozy Apartment</h3>
+                <p>Location: Downtown</p>
+                <p>Price: $300,000</p>
+                <p>Bedrooms: 2 | Bathrooms: 1 | Size: 1,200 sqft</p>
+                <a href="#">View Details</a>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Dream Properties is a leading real estate agency dedicated to helping clients find their ideal homes and investment properties. With over 20 years of experience, we pride ourselves on delivering exceptional service and expert advice.</p>
+            <p>Our team consists of licensed professionals who are knowledgeable about local markets and committed to guiding you through every step of the process. Whether you are buying, selling, or renting, we are here to help.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or would like to schedule a consultation, please don’t hesitate to reach out to us.</p>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone">
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+            <p>Phone: +91 8658156564 | Email: info@dreamproperties.com</p>
+            <p>Address: 123 Real Estate Blvd, Springfield, USA</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Dream Properties. All Rights Reserved.</p>
+        <p>Follow us on:
+            <a href="https://web.whatsapp.com/">Facebook</a> |
+            <a href="https://frontlinesmedia.in/category/job-notifications/page/3/">Twitter</a> |
+            <a href="https://www.linkedin.com/in/hemanth616818/">Instagram</a>
+        </p>
+    </footer>
+</body>
+</html>
